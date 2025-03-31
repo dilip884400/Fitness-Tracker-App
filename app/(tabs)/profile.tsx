@@ -38,6 +38,8 @@ export default function ProfileScreen() {
         gender: "",
         login: false
       });
+      await AsyncStorage.removeItem('loginPerson');
+
 
       Toast.show({
         type: 'success',
