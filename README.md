@@ -48,7 +48,7 @@ This will open the Expo Developer Tools in your browser.
 
 ## Running on a Physical Device (Expo Go)
 
-1. Install the [Expo Go](https://expo.dev/client) app on your mobile device (available on iOS and Android).
+1. Install the EXPO GO app on your mobile device (available on iOS and Android).
 2. Ensure your mobile device and your development machine are connected to the same Wi-Fi network.
 3. Scan the QR code displayed in the terminal or Expo Developer Tools using the Expo Go app.
 4. The app should launch on your mobile device.
