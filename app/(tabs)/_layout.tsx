@@ -30,13 +30,15 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Home',
+          tabBarActiveTintColor: '#FF5733',
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="profile"
         options={{
-          title: 'Explore',
+          title: 'Profile',
+          tabBarActiveTintColor: '#FF5733',
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
         }}
       />
