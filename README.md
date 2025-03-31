@@ -1,50 +1,108 @@
-# Welcome to your Expo app 👋
+# React Native Expo App Installation Guide
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Prerequisites
+Before you begin, ensure you have the following installed:
 
-## Get started
+- [Node.js](https://nodejs.org/) (Latest LTS version recommended)
+- [Git](https://git-scm.com/)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
+- [Expo Go](https://expo.dev/client) (for running on a mobile device)
 
-1. Install dependencies
+## Cloning the Repository
 
-   ```bash
-   npm install
+1. Open your terminal and navigate to the directory where you want to clone the repository.
+2. Run the following command to clone the repository:
+   ```sh
+   git clone https://github.com/dilip884400/Fitness-Tracker-App.git
+   ```
+3. Navigate into the project folder:
+   ```sh
+   cd Fitness-Tracker-Ap
    ```
 
-2. Start the app
+## Installing Dependencies
 
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+Run the following command to install the required dependencies:
+```sh
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+or using Yarn:
+```sh
+yarn install
+```
 
-## Learn more
+## Running the App Locally
 
-To learn more about developing your project with Expo, look at the following resources:
+To start the Expo development server, run:
+```sh
+npm start
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+or using Yarn:
+```sh
+yarn expo start
+```
 
-## Join the community
+This will open the Expo Developer Tools in your browser.
 
-Join our community of developers creating universal apps.
+## Running on a Physical Device (Expo Go)
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+1. Install the [Expo Go](https://expo.dev/client) app on your mobile device (available on iOS and Android).
+2. Ensure your mobile device and your development machine are connected to the same Wi-Fi network.
+3. Scan the QR code displayed in the terminal or Expo Developer Tools using the Expo Go app.
+4. The app should launch on your mobile device.
+
+## Running on an Emulator/Simulator
+
+### Android Emulator
+
+1. Install [Android Studio](https://developer.android.com/studio) and set up an Android Virtual Device (AVD).
+2. Start the emulator.
+3. Run the following command in the terminal:
+   ```sh
+   npx expo start
+   ```
+4. Press `a` in the terminal to launch the app on the Android emulator.
+
+### iOS Simulator (Mac Only)
+
+1. Install [Xcode](https://developer.apple.com/xcode/).
+2. Ensure Xcode Command Line Tools are installed:
+   ```sh
+   sudo xcode-select --install
+   ```
+3. Start the iOS simulator using:
+   ```sh
+   npx expo start
+   ```
+4. Press `i` in the terminal to launch the app on the iOS simulator.
+
+## Troubleshooting
+
+- If dependencies fail to install, try clearing the cache:
+  ```sh
+  rm -rf node_modules package-lock.json && npm install
+  ```
+  or using Yarn:
+  ```sh
+  rm -rf node_modules yarn.lock && yarn install
+  ```
+- If the Expo server does not start, restart it using:
+  ```sh
+  npx expo start --clear
+  ```
+
+## Building the App (Optional)
+To create a standalone app for iOS or Android, use Expo's build service:
+```sh
+npx expo prebuild
+```
+For more details, refer to [Expo Documentation](https://docs.expo.dev/build/introduction/).
+
+## Contributing
+If you'd like to contribute, please fork the repository and create a pull request.
+
+## License
+This project is licensed under the MIT License.
+
